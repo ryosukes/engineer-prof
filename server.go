@@ -13,7 +13,9 @@ func main() {
 	e.Use(middleware.Recover())
 
 	// ルーティング
-	e.GET("/", index.Show())
+	e.GET("/", handler.IndexPage())
+	e.GET("/users", handler.ShowUsersList())
+	e.GET("/users/:id", handler.ShowUsersDetail())
 
 	e.Logger.Fatal(e.Start(":1323"))
 }
