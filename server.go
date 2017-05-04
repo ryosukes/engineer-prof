@@ -25,6 +25,7 @@ func main() {
 	e := echo.New()
 	e.Renderer = t
 	e.Static("/static", "public")
+	e.Static("/static/semantic", "semantic")
 
 	e.Use(middleware.Logger())
 	e.Use(middleware.Recover())
