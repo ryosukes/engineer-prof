@@ -24,6 +24,7 @@ func main() {
 
 	e := echo.New()
 	e.Renderer = t
+	e.Static("/static", "public")
 
 	e.Use(middleware.Logger())
 	e.Use(middleware.Recover())
