@@ -4,8 +4,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>hoge</title>
+		<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset-context/cssreset-context-min.css">
 		<link rel="stylesheet" type="text/css" href="static/semantic/dist/semantic.min.css">
-		<link href="static/css/test.css" rel="stylesheet" type="text/css">
+		<link href="static/css/main.min.css" rel="stylesheet" type="text/css">
 		<script
 			src="https://code.jquery.com/jquery-3.1.1.min.js"
 			integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
@@ -14,8 +15,33 @@
 		<script src="static/semantic/dist/semantic.min.js"></script>
 	</head>
 	<body>
-		<p class="test-text">Hello, {{.}}! & Godo!!</p>
-		<div class="ui button">test button</div>
+		<header>
+			<h1>engineer prof</h1>
+		</header>
+		<div id="branding">
+			<p>Test Design.</p>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#">ナビ1</a></li>
+				<li><a href="#">ナビ2</a></li>
+				<li><a href="#">ナビ3</a></li>
+				<li><a href="#">ナビ4</a></li>
+			</ul>
+		</nav>
+		<article>
+			<section>
+				<span class="date">2017/05/04</span>
+				<h1>first</h1>
+				<p>
+					Hello {{.}}
+				</p>
+				<div class="ui button">more</div>
+			</section>
+		</article>
+		<footer>
+			<address>Copyright(C)ryosukes,Allright Reserved.</address>
+		</footer>
 	</body>
 </html>
 {{end}}
