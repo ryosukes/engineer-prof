@@ -1,0 +1,9 @@
+package: github.com/ryosukes/engineer-prof
+import:
+- package: github.com/jinzhu/gorm
+  subpackages:
+  - dialects/mysql
+- package: github.com/labstack/echo
+  subpackages:
+  - middleware
+- package: gopkg.in/godo.v2
