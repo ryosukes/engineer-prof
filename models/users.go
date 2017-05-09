@@ -8,15 +8,14 @@ import (
 )
 
 type User struct {
-	Id          int64
-	Name        string
-	Email       string
-	RoleId      int
-	Img         string
-	IsGravatar  int
-	AccessToken string
-	CreatedAt   time.Time
-	ModifiedAt  time.Time
+	Id         int64
+	Name       string
+	Email      string
+	RoleId     int
+	Img        string
+	IsGravatar int
+	CreatedAt  time.Time
+	ModifiedAt time.Time
 }
 
 var user User
