@@ -34,7 +34,7 @@ func ShowUsersList() echo.HandlerFunc {
 func ShowUsersDetail() echo.HandlerFunc {
 	return func(c echo.Context) error {
 		id, _ := strconv.Atoi(c.Param("id"))
-		user := h.userModel.Fetch(int64(id))
-		return c.JSON(http.StatusOK, resultUserJson{User: user})
+		userDetail := h.userModel.Fetch(int64(id))
+		return c.Render(http.StatusOK, "userDetail", userDetail)
 	}
 }
