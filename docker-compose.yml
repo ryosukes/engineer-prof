@@ -1,0 +1,21 @@
+# docker-compose.yml
+version: '2'
+
+services:
+  db:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: database
+    ports:
+      - "13306:3306"
+    volumes:
+      - "./data/mysql:/var/lib/mysql"
+  app:
+    depends_on:
+      - db
+    build: ./
+    ports:
+      - "5000:5000"
+    links:
+      - db
