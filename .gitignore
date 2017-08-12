@@ -21,8 +21,5 @@ godobin*
 # node_modules
 node_modules
 
-# db config
-config/db.go
-
 # vendor
 vendor
