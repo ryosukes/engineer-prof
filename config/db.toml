@@ -1,0 +1,6 @@
+[dbConfig]
+user = "root"
+pass = "pasword"
+host=localhost
+name = "golangtest"
+port = "3306"
