@@ -3,7 +3,6 @@ package db
 import (
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
-	"github.com/ryosukes/engineer-prof/config"
 )
 
 func Connect() *gorm.DB {
