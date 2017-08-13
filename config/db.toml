@@ -1,6 +1,6 @@
-[dbConfig]
+[Db]
 user = "root"
 pass = "pasword"
-host=localhost
+host = "localhost"
 name = "golangtest"
 port = "3306"
