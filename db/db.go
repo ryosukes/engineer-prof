@@ -7,6 +7,7 @@ import (
 
 func Connect() *gorm.DB {
 	toml.DecodeFile("../config/db.toml", &dbConfig)
+
 	connection := dbConfig.user + ":" + dbConfig.pass + "@tcp([" + dbConfig.host + "]:" + dbConfig.port + ")/" + dbConfig.name + "?charset=utf8&parseTime=True"
 	db, err := gorm.Open(
 		"mysql",
